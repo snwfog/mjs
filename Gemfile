@@ -21,7 +21,9 @@ gem 'puma'
 # gem 'rack-cors'
 
 group :development, :test do
+  gem 'jazz_hands', group: :development, git: 'https://github.com/nixme/jazz_hands', branch: 'bring-your-own-debugger'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry-byebug'
   gem 'byebug'
 end
 
